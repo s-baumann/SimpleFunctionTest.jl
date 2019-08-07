@@ -1,0 +1,7 @@
+name = "SimpleFunctionTest"
+uuid = "415761a0-b89e-11e9-1b9b-93ba8e08f2c9"
+authors = ["Stuart Baumann <stuart@stuartbaumann.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.0"
