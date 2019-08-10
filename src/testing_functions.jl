@@ -17,7 +17,7 @@ struct FunctionTestResult{T<:Real}
     curvature_test::Union{Missing,Bool}
 end
 
-function test_univariate_function(f::Function, grid::Union{Array,StepRangeLen};
+function test_univariate_function(f::Function, grid::Union{Array,StepRangeLen,UnitRange};
             monotonicity::Symbol = :any, curvature::Symbol = :any, evals = f.(grid), tol = eps(),
             print_reports::Bool = false, infs::Symbol = :no, missings::Symbol = :no, NaNs::Symbol = :no, linearity_test_tol = 1e-2)
     if !(monotonicity in monotonicity_vals) error("Not a valid value for monotonicity in the test_univariate_function. You must input a value from the following list ", monotonicity_vals) end
